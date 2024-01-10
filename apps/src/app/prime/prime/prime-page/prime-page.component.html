@@ -20,24 +20,26 @@
         <h2 class="text-white">MudailyarMatrimony PRIME</h2>
       </div>
     </div>
-    <div class="prime-content mx-auto text-white" style="width: 90%;">
-      <h4 class="prime-content-title">With PRIME you get:</h4>
-      <div class="prime-content-description">
-        <ul class="mb-5 p-0">
-          <ng-container *ngFor="let list of lists">
-            <li class="text-white mb-3 list-style-none">
-              <div class="d-flex justify-content-start align-items-start">
-
+    <div class="prime-content d-flex justify-content-center mx-auto text-white" style="width: 90%;">
+      <div class="prime-content-holder">
+        <h4 class="prime-content-title">With PRIME you get:</h4>
+        <div class="prime-content-description">
+          <ul class="mb-5 p-0">
+            <ng-container *ngFor="let list of lists">
+              <li class="text-white mb-3 list-style-none">
                 <div class="d-flex justify-content-start align-items-start">
-                  <span class="material-icons fs-16px" style="vertical-align: middle">star</span>
+  
+                  <div class="d-flex justify-content-start align-items-start">
+                    <span class="material-icons fs-16px" style="vertical-align: middle">star</span>
+                  </div>
+                  <p class="d-flex pl-2 m-0 justify-content-start align-items-center">
+                    {{list}}
+                  </p>
                 </div>
-                <p class="d-flex pl-2 m-0 justify-content-start align-items-center">
-                  {{list}}
-                </p>
-              </div>
-            </li>
-          </ng-container>
-        </ul>
+              </li>
+            </ng-container>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
